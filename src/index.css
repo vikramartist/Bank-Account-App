@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .service-button {
+    @apply lg:w-[10rem] md:w-[9rem] sm:w-[8.5rem] ssm:w-[7.5rem] h-[2rem] rounded-lg bg-gray-300 lg:text-sm md:text-xs sm:text-[0.77rem] ssm:text-[0.7rem] hover:bg-slate-600 hover:text-white shadow-md shadow-slate-200;
+  }
+
+  .disabled {
+    @apply bg-slate-500 w-[10rem] h-[2rem] rounded-lg;
+  }
+}
