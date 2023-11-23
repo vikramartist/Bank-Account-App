@@ -67,7 +67,7 @@ export default function Services({
             />
             <button
               className="service-button"
-              disabled={balance < 0}
+              disabled={balance < 0 || remove > balance}
               onClick={() => dispatch({ type: "withdraw" })}
             >
               <p>WithDraw</p>
